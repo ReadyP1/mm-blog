@@ -11,3 +11,5 @@ gem "builder", "~> 3.0"
 gem 'redcarpet'
 gem 'middleman-minify-html'
 gem 'middleman-imageoptim'
+gem "middleman-livereload", "~> 3.3.0"
+gem "middleman-syntax"
