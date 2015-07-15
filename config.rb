@@ -84,22 +84,22 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-# GFM stuff
-set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true
-activate :syntax
+set :build_dir, "tmp"
 
 # Build-specific configuration
 configure :build do
-  activate :asset_hash
-  activate :gzip
-  activate :minify_css
-  activate :minify_html
-  activate :minify_javascript
-  activate :relative_assets
+  # For example, change the Compass output style for deployment
+  # activate :minify_css
 
-  activate :imageoptim do |options|
-    options.manifest = false
-    options.svgo = false
-  end
+  # Minify Javascript on build
+  # activate :minify_javascript
+
+  # Enable cache buster
+  # activate :asset_hash
+
+  # Use relative URLs
+  # activate :relative_assets
+
+  # Or use a different image path
+  # set :http_prefix, "/Content/images/"
 end
