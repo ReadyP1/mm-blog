@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     activesupport (4.1.12)
       i18n (~> 0.6, >= 0.6.9)
@@ -8,13 +8,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    bitters (1.0.0)
-      bourbon (>= 3.2)
-      sass (>= 3.2)
-      thor
-    bourbon (4.2.3)
-      sass (~> 3.4)
-      thor
     builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -118,9 +111,6 @@ GEM
       rouge (~> 1.0)
     minitest (5.7.0)
     multi_json (1.11.2)
-    neat (1.7.2)
-      bourbon (>= 4.0)
-      sass (>= 3.3)
     padrino-helpers (0.12.5)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.5)
@@ -165,8 +155,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bitters
-  bourbon
   builder (~> 3.0)
   middleman (~> 3.3.12)
   middleman-blog (~> 3.5.3)
@@ -174,7 +162,6 @@ DEPENDENCIES
   middleman-livereload (~> 3.3.0)
   middleman-minify-html
   middleman-syntax
-  neat
   redcarpet
 
 BUNDLED WITH
