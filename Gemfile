@@ -33,14 +33,15 @@ gem 'breakpoint', '~> 2.5.0'
 # Rails Assets
 gem 'rails-assets-font-awesome', '~> 4.3.0', :require => false
 
-# Web server
-gem 'puma', '~> 2.11.0'
+# Heroku New Relic Addon
+gem 'newrelic_rpm'
 
 # to serve static files
 gem 'rack-contrib', '~> 1.2.0'
 
-# Heroku New Relic Addon
-gem 'newrelic_rpm'
-
+# to zip said files
 gem "rack-zippy"
 gem 'zippy_static_cache'
+
+# Web server
+gem 'puma', '~> 2.11.0'
