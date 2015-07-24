@@ -1,12 +1,18 @@
-# Drops (middleman-blog-drops-template)
+[ ![Codeship Status for ReadyP1/mm-blog](https://codeship.com/projects/979ff290-0cd0-0133-9fee-7aae0ba3591b/status?branch=master)](https://codeship.com/projects/91210)
+
+# Middleman blog
+This is just a [Middleman](https://middlemanapp.com/) blog. I use this repo for CI (see above badge) and quick deployment to Heroku.
+
+
+## Drops (middleman-blog-drops-template)
 
 Drops is a Middleman blog template.
 
-## Screenshot
+### Screenshot
 
 ![screenshot.jpg](https://raw.githubusercontent.com/wiki/5t111111/middleman-blog-drops-template/images/screenshot.jpg)
 
-## Features
+### Features
 
 - Lovely darkish water drop mascot
 - Heroku deployment ready (You can also add New Relic addon out of the box)
@@ -16,7 +22,7 @@ Drops is a Middleman blog template.
 - [Rails Assets](https://rails-assets.org) for assets management (No longer required to install Bower)
 - No Nokogiri dependency (by using custom middleman-blog with [Oga](https://github.com/YorickPeterse/oga))
 
-## Installation
+### Installation
 
 Install Middleman if you haven't done yet.
 
@@ -24,7 +30,7 @@ Install Middleman if you haven't done yet.
 $ gem install middleman
 ```
 
-### Clone this template to your machine
+#### Clone this template to your machine
 
 ```console
 $ mkdir ~/.middleman # if it doesn't exist
@@ -32,20 +38,20 @@ $ cd ~/.middleman
 $ git clone https://github.com/5t111111/middleman-blog-drops-template.git blog-drops
 ```
 
-### Create middleman blog project
+#### Create middleman blog project
 
 ```console
 $ middleman init my_blog_project --template=blog-drops
 ```
 
-### Install gems
+#### Install gems
 
 ```console
 $ cd my_blog_project
 $ bundle install
 ```
 
-### Start Middleman server
+#### Start Middleman server
 
 ```console
 $ bundle exec middleman
@@ -53,11 +59,11 @@ $ bundle exec middleman
 
 Then open `http://localhost:4567` in a web browser.
 
-### Write article
+#### Write article
 
 Now you are ready to write your own articles. Create markdown file (.md) in `source/posts` and start writing. See exmaple article file `2014-11-20-this-is-an-example-article.html.md` for details.
 
-## Configuration
+### Configuration
 
 Edit at least the following settings in the bottom section of `config.rb`.
 
@@ -73,7 +79,7 @@ Edit at least the following settings in the bottom section of `config.rb`.
 | :social_links               | social link buttons in author page                                                      |
 | :google_analytics_account   | Google Analytics account (optional)                                                     |
 
-## Heroku deployment
+### Heroku deployment
 
 Since Drops provides the configuration of Rack appliction for static file serving, in almost all cases you don't need to setup any server configuration at all. 
 
@@ -85,7 +91,7 @@ source 'https://rails-assets.org'
 
 ruby '2.1.5'
 
-# middleman
+## middleman
 gem 'middleman', '~> 3.3.5'
 
 ...
@@ -111,7 +117,7 @@ $ heroku open
 
 See `config.ru` and `Procfile` for details.
 
-## License
+### License
 
 Drops (except the images) is licensed under MIT license.
 The built-in images provided in `source/images` are restricted to use only within this template, so you cannot use outside of this template or re-distribute them.
